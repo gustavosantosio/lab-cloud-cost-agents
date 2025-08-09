@@ -1,9 +1,3 @@
-"""
-Cloud Cost Agent v2 - Legal RAG MCP Server
-Servidor MCP especializado para sistema RAG com documentos jurídicos
-Compatível com Windows
-"""
-
 import json
 import asyncio
 import logging
