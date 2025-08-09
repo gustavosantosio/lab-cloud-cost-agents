@@ -1,5 +1,4 @@
 """
-Cloud Cost Agent - GCP Logger
 Sistema completo de logging e analytics para agentes de IA
 """
 

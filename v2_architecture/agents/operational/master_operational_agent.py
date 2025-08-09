@@ -1,7 +1,6 @@
 """
 Cloud Cost Agent v2 - Master Operational Agent
 Agente operacional que gerencia toda a cadeia de outros agentes do sistema
-Compatível com Windows
 """
 
 import asyncio
@@ -17,7 +16,6 @@ from dataclasses import dataclass, asdict
 from crewai import Agent, Task, Crew, Process
 from crewai.tools import BaseTool
 from langchain.llms import OpenAI
-from langchain.tools import Tool
 
 # Cloud SDKs
 import boto3
