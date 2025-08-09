@@ -1,7 +1,6 @@
 """
 Cloud Cost Agent v2 - SLA Analysis MCP Server
 Servidor MCP especializado para análise de SLAs de provedores de nuvem
-Compatível com Windows
 """
 
 import json
@@ -12,7 +11,7 @@ from typing import Dict, List, Any, Optional, Tuple
 from dataclasses import dataclass, asdict
 import os
 import sys
-import aiohttp
+from aiohttp import ClientSession
 import statistics
 from enum import Enum
 
@@ -93,7 +92,7 @@ class SLADataProvider:
         self.session = None
     
     async def __aenter__(self):
-        self.session = aiohttp.ClientSession()
+        self.session = ClientSession()
         return self
     
     async def __aexit__(self, exc_type, exc_val, exc_tb):
